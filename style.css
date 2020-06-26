@@ -1,0 +1,249 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/* ul{
+    margin: 0;
+    padding: 0;
+} */
+.dark{
+    padding: 15px;
+    background: #35424a;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.container{
+    width: 80%;
+    margin: auto;   /*margin auto will center everything*/
+    overflow: hidden;
+}
+header{
+    background: #35424a;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 3px solid #e8491d;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    /* list-style: none; */
+    display: inline;
+    padding: 0 20px 0 20px;
+    float: left;
+}
+header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+/* THERE GOES THE SHOWCASE SECTION */
+#showcase{
+    min-height: 400px;
+    background: url('../image/showcase.jpg') no-repeat 0 -400px;
+    text-align: center;
+    color: #fff;
+    background-attachment: fixed;
+}
+#showcase h1{
+    margin-top: 80px;
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+#showcase p{
+    font-size: 20px;
+}
+/*NEWSLETTER SECTION */
+#newsletter{
+    padding: 15px;
+    color: #fff;
+    background: #35424a;
+}
+#newsletter .container{
+    display: flex;
+    justify-content: space-around;
+}
+#newsletter h1{
+    font-size: 30px;
+}
+#newsletter form{
+    margin-top: 30px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 20px;
+    width: 220px;
+}
+.button_1{
+    height: 30px;
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    transition: 0.4s;
+}
+.button_1:hover{
+    background: #e8491d;
+    color: #fff;
+    cursor: pointer;
+}
+/*HTML, CSS3 AND GRAPHICS SECTION*/
+#boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+.fab , .fa-html5{
+    font-size: 40px;
+    color: blue;
+}
+.fas, .fa-paint-brush{
+    font-size: 40px;
+}
+#html{
+    color: #e8491d;
+}
+/*THERE GOES THE PRICE-WORK SECTION*/
+#price-work{
+    background: url('https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80') no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+#price-work h1{
+    font-size: 40px;
+}
+#price-work p{
+    font-size: 20px;
+}
+#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 30px;
+}
+.main-col{
+    width: 60%;
+    float: left;
+}
+
+/*THERE GOES THE FOOTER*/
+footer{
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #e8491d;
+    background-color: #35424a;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+}
+footer .right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+}
+
+
+
+
+@media(max-width:600px){
+    #newsletter .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    #newsletter h1{
+        font-size: 20px;
+    }
+    #newsletter input[type="email"]{
+        padding: 4px;
+        height: 15px;
+        width: 150px;
+    }
+    #newsletter form{
+        margin-top: 20px;
+    }
+    .button_1{
+        height: 25px;
+        margin-top: 10px;
+        font-size: 15px;
+        padding: 5px;
+    }
+    footer{
+        font-size: 16px;
+    }
+    header h1{
+        font-size: 30px;
+    }
+    #price-work h1{
+        font-size: 40px;
+    }
+    #price-work p{
+        font-size: 19px;
+    }
+    .main-col{
+        width: 90%;
+    }
+    #sidebar{
+        width: 70%;
+    }
+}
+
+@media(min-width:601px) and (max-width:950px){
+    #newsletter .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    #newsletter h1{
+        font-size: 20px;
+    }
+    #newsletter input[type="email"]{
+        padding: 4px;
+        height: 17px;
+        width: 150px;
+    }
+    #newsletter form{
+        margin-top: 10px;
+    }
+    .button_1{
+        height: 27px;
+        margin-top: 10px;
+        font-size: 15px;
+        padding: 2px;
+    }
+    header .open-slide{
+        visibility: hidden;
+    }
+}
+@media(min-width:951px) and(max-width:1150px){
+    #newsletter .container h1{
+        font-size: 15px;
+    }
+    .open-slide{
+        visibility: hidden;
+        display: none;
+    }
+    
+}
+
